@@ -991,7 +991,7 @@ func (s *slowQueryRuntimeStats) Clone() execdetails.RuntimeStats {
 
 // Tp implements the RuntimeStats interface.
 func (s *slowQueryRuntimeStats) Tp() int {
-	return execdetails.TpSlowQueryRuntimeStat
+	return execdetails.TpSlowQueryRuntimeStats
 }
 
 func (e *slowQueryRetriever) getFileEndTime(ctx context.Context, file *os.File) (time.Time, error) {
